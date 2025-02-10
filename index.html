@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal Page</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f984b5, #f57b8f);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .heart-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Perfect Heart SVG */
+    .heart {
+      width: 120px;
+      height: 120px;
+      fill: #ff4d6d;
+      animation: pulse 1.5s infinite ease-in-out;
+      filter: drop-shadow(0 0 10px #ff759b);
+    }
+
+    /* Glow Effect */
+    @keyframes pulse {
+      0%,
+      100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px #ff759b);
+      }
+
+      50% {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 30px #ff759b);
+      }
+    }
+
+    /* Shayari Text Styling */
+    .shayari-text {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffebd0;
+      display: inline-block;
+      line-height: 1.5;
+      opacity: 0; /* Initially hidden */
+      animation: fadeInText 1.5s forwards;
+    }
+
+    /* Animation for Text */
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Animation for words */
+    .word {
+      opacity: 0;
+      display: inline-block;
+      animation: fadeInWord 1.5s forwards;
+    }
+    .word:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.word:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.word:nth-child(4) {
+  animation-delay: 2.5s;
+}
+
+.word:nth-child(5) {
+  animation-delay: 3s;
+}
+
+.word:nth-child(6) {
+  animation-delay: 3.5s;
+}
+
+.word:nth-child(7) {
+  animation-delay: 4s;
+}
+
+.word:nth-child(8) {
+  animation-delay: 4.5s;
+}
+
+.word:nth-child(9) {
+  animation-delay: 5s;
+}
+
+.word:nth-child(10) {
+  animation-delay: 5.5s;
+}
+
+.word:nth-child(11) {
+  animation-delay: 6s;
+}
+
+.word:nth-child(12) {
+  animation-delay: 6.5s;
+}
+
+.word:nth-child(13) {
+  animation-delay: 7s;
+}
+
+.word:nth-child(14) {
+  animation-delay: 7.5s;
+}
+
+.word:nth-child(15) {
+  animation-delay: 8s;
+}
+
+.word:nth-child(16) {
+  animation-delay: 8.5s;
+}
+
+.word:nth-child(17) {
+  animation-delay: 9s;
+}
+
+.word:nth-child(18) {
+  animation-delay: 9.5s;
+}
+
+    @keyframes fadeInWord {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Button Styling */
+    .propose-btn {
+      background-color: #ff4d6d;
+      border: none;
+      padding: 15px 30px;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .propose-btn:hover {
+      background-color: #ffffff;
+      color: #f2264b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heart-container">
+    <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </svg>
+
+    <!-- First Line of Shayari (Appears first) -->
+    <div class="shayari-text">
+      <span class="word">Hey</span>
+      <span class="word">my</span>
+      <span class="word">princess,</span><br>
+
+      <span class="word">I</span>
+      <span class="word">have</span>
+      <span class="word">so</span>
+      <span class="word">much</span>
+      <span class="word">to</span>
+      <span class="word">say,</span><br>
+      <span class="word">but</span>
+      <span class="word">words</span>
+      <span class="word">fail</span>
+      <span class="word">to</span>
+      <span class="word">express</span>
+      <span class="word">it</span>
+      <span class="word">all.</span>
+    </div>
+
+    
+
+    <button class="propose-btn" onclick="window.location.href='book.html'">
+      Click: So This is For You   ❤
+    </button>
+  </div>
+</body>
+
+</html>
